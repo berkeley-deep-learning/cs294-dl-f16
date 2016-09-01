@@ -1,346 +1,383 @@
 <!DOCTYPE html>
 <!-- saved from url=(0061)http://inst.eecs.berkeley.edu/~cs294-116/fa15/#Administrative -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+
 
     <title>CS 294-131 Special Topics in Deep Learning Fall 2016</title>
-    
+
     <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <style>
-        /* thanks to http://www.smashingmagazine.com/2008/08/13/top-10-css-table-designs/ */
-        #hor-minimalist-b {
-            background:#fff;
-            margin:0 auto;
-            border-collapse:collapse;
-            text-align:left;
-            border-collapse:collapse;
-            border:1px solid #000;
-            width:95%
-        }
+/* thanks to http://www.smashingmagazine.com/2008/08/13/top-10-css-table-designs/ */
+#hor-minimalist-b {
+  background:#fff;
+  margin:0 auto;
+  border-collapse:collapse;
+  text-align:left;
+  border-collapse:collapse;
+  border:1px solid #000;
+  width:95%
+}
 
         #hor-minimalist-b th {
-            font-weight:400;
-            color:#000;
-            font-size:100%;
-            padding:10px 8px;
-            border-bottom:2px solid #6678b1;
-            border-right:1px solid #000;
-            border-top:1px solid #000;
-            border-left:1px solid #000;
-            border-bottom:1px solid #000
+          font-weight:400;
+          color:#000;
+          font-size:100%;
+          padding:10px 8px;
+          border-bottom:2px solid #6678b1;
+          border-right:1px solid #000;
+          border-top:1px solid #000;
+          border-left:1px solid #000;
+          border-bottom:1px solid #000
         }
 
         #hor-minimalist-b td {
-            border-bottom:1px solid #ccc;
-            color:#000;
-            padding:6px 8px;
-            border-right:1px solid #000
+          border-bottom:1px solid #ccc;
+          color:#000;
+          padding:6px 8px;
+          border-right:1px solid #000
         }
 
         #hor-minimalist-b tbody tr:hover td {
-            background-color:#F9F9F9
+          background-color:#F9F9F9
         }
 
         body {
-            background:#F1F1F1
+          background:#F1F1F1
         }
 
         #content {
-            width:1200px;
-            margin:0 auto;
-            background:#fff;
-            -moz-border-radius:18px;
-            -webkit-border-radius:18px;
-            padding:30px;
-            padding-left:20px;
-            margin-top:30px;
-            border-radius:18px 18px 18px 18px
+          width:1200px;
+          margin:0 auto;
+          background:#fff;
+          -moz-border-radius:18px;
+          -webkit-border-radius:18px;
+          padding:30px;
+          padding-left:20px;
+          margin-top:30px;
+          border-radius:18px 18px 18px 18px
         }
 
         #page-wrap {
-            width:1200px;
-            margin:0 auto;
-            margin-bottom:40px
+          width:1200px;
+          margin:0 auto;
+          margin-bottom:40px
         }
 
         #title {
-            margin-left:20px;
-            margin-top:60px;
-            font-family:'Ubuntu';
-            font-weight:700
+          margin-left:20px;
+          margin-top:60px;
+          font-family:'Ubuntu';
+          font-weight:700
         }
 
         h3 {
-            font-family:'Ubuntu'
+          font-family:'Ubuntu'
         }
 
         .section {
-            margin:13px 0
+          margin:13px 0
         }
 
         .sec_body {
-            margin-left:20px;
-            margin-top:-10px
+          margin-left:20px;
+          margin-top:-10px
         }
 
         #navigation li {
-            display:inline;
-            list-style-type:none;
-            padding-right:20px;
-            font-family:'Ubuntu'
+          display:inline;
+          list-style-type:none;
+          padding-right:20px;
+          font-family:'Ubuntu'
         }
 
         #navigation li a {
-            color:#fff
+          color:#fff
         }
 
         #navigation {
-            position:fixed;
-            top:0;
-            width:100%;
-            height:50px;
-            background:#8C0031
+          position:fixed;
+          top:0;
+          width:100%;
+          height:50px;
+          background:#8C0031
         }
 
         #navigation ul {
-            margin-left:-20px
+          margin-left:-20px
         }
 
         body {
-            margin:0
+          margin:0
         }
 
         .sectionhead {
-            margin-bottom:50px;
-            margin-top:-25px;
-            margin-left:-5000px
+          margin-bottom:50px;
+          margin-top:-25px;
+          margin-left:-5000px
         }
 
         .notes {
-            text-align:center;
-            font-size:smaller;
+          text-align:center;
+          font-size:smaller;
         }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="navigation">
-        <ul>
-            <li>
-                <a href="#Administrative">Administrative</a>
-            </li>
+      <ul>
+        <li>
+          <a href="#Administrative">Administrative</a>
+        </li>
 
-            <li>
-                <a href="#Syllabus">Syllabus</a>
-            </li>
-            <li>
-                <a href="#CourseDescription">Course Description</a>
-            </li>
+        <li>
+          <a href="#Syllabus">Syllabus</a>
+        </li>
+        <li>
+          <a href="#CourseDescription">Course Description</a>
+        </li>
 
-            <li>
-                <a href="#ClassFormat">Class Format and Project</a>
-            </li>
+        <li>
+          <a href="#ClassFormat">Class Format and Project</a>
+        </li>
 
-            <li>
-                <a href="#Grading">Grading</a>
-            </li>           
-        </ul>
+        <li>
+          <a href="#Grading">Grading</a>
+        </li>
+      </ul>
     </div>
 
     <div id="page-wrap">
-        <div id="title">
-            <h1>CS294: Special Topics in Deep Learning </h1>
+      <div id="title">
+        <h1>CS294: Special Topics in Deep Learning </h1>
 
-            <h1 style="margin-top:-20px">Fall 2016</h1>
+        <h1 style="margin-top:-20px">Fall 2016</h1>
+      </div>
+
+      <div id="content">
+        <div class="sectionhead" id="Administrative"></div>
+
+        <div class="section">
+          <h3>Instructor and co-Instructors:</h3>
+
+          <div class="sec_body">
+            <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a href="http://www.cs.berkeley.edu/~dawnsong/">Dawn Song</a>
+          </div>
         </div>
 
-        <div id="content">
-            <div class="sectionhead" id="Administrative"></div>
+        <div class="section">
+          <h3> Teaching Assistant:</h3>
 
-            <div class="section">
-                <h3>Instructor and co-Instructors:</h3>
-
-                <div class="sec_body">
-                    	<a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a href="http://www.cs.berkeley.edu/~dawnsong/">Dawn Song</a>		
-                </div>
-            </div>
-
-            <div class="section">
-                <h3> Teaching Assistant:</h3>
-
-                <div class="sec_body">
-                    <p><a href="https:">Chang Liu</a>, <a href="https:">Richard Shin</a></p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h3>Lectures:</h3>
-
-                <div class="sec_body">
-                    Wed 10:00am-noon  (First class starts on Aug 31) <br>
-		    location: SDH250
-                </div>
-            </div>           
-            <div class="section">
-<h3>Course mailing list:</h3>
-                <div class="sec_body">
-     cs294-dl-f16@googlegroups.com <br>
-Please sign up the course mailing list at https://groups.google.com/forum/#!forum/cs294-dl-f16 for future updates.<br>
-<p>
-If you do not plan to take the class, but are interested in getting announcements about guest speakers in class, and more generally, deep learning talks at Berkeley, please sign up the mailing list <b>https://groups.google.com/forum/#!forum/berkeley-deep-learning </b>for future announcements.<br>
-</div>
-            </div>           
-			<div class="section" id="Syllabus">
-                <h3>Syllabus:</h3>
-
-                <div class="sec_body">
-                    <table id="hor-minimalist-b" width="800px">
-                        <thead>
-                            <tr>
-                                <th width="10%">Date</th>
-                                <th width="25%">Topic</th>                                
-                                <th width="65%">Reading Assignments &amp; Guest Lectures</th>
-								
-                               
-                            </tr>
-                        </thead>
-                        <tbody>
-							<tr>
-								<td colspan="5" align="center"><b></b></td>
-							</tr>
-                            <tr>
-                                <td>8/31/2016</td>
-                                <td>Introduction</td>                                
-                                <td>Guest speaker: <a href="guest_speakers.html#Lecture1">Kaiming He</a><br>
-                                  Reading: <a href="https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf">Deep Learning</a>, by Yann LeCun, Yoshua Bengio, and Geoffrey Hinton./td>
-                            </tr>  
-                            <tr>
-                              <td>9/7/2016</td>
-                              <td>Attention, memory models, new applications and
-                                directions</td>
-                              <td>Guest speaker: Ilya Sutskever</td>
-                            </tr>
-                            <tr>
-                              <td>9/14/2016</td>
-                              <td>Learning algorithms from examples</td>
-                              <td>Guest speaker: Wojciech Zaremba</td>
-                            </tr>
-                            <tr>
-                              <td>9/21/2016</td>
-                              <td>Deep learning for theorem proving</td>
-                              <td>Guest speaker: Geoffrey Irving</td>
-                            </tr>
-                            <tr>
-                              <td>9/27/2016 (special date)</td>
-                              <td>Generative models</td>
-                              <td>Guest speaker: Yoshua Bengio</td>
-                            </tr>
-                            <tr>
-                              <td>9/28/2016</td>
-                              <td>Privacy-preserving deep learning</td>
-                              <td>Guest speaker: Kunal Talwar</td>
-                            </tr>
-                            <tr>
-                              <td>10/5/2016</td>
-                              <td>Adversarial deep learning</td>
-                              <td>Guest speaker: Ian Goodfellow</td>
-                            </tr>
-                            <tr>
-                              <td>10/12/2016</td>
-                              <td>Sequences and one-shot learning</td>
-                              <td>Guest speaker: Oriol Vinyals</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-<br>			
-<p>
-			
-                      
-            <div class="section" id="CourseDescription">
-                <h3>Course Description:</h3>
-
-                <div class="sec_body" style="text-align:justify">
-                    <p>
-
-In recent years, deep learning has enabled huge progress in many
-domains including computer vision, speech, NLP, and robotics. It has
-become the leading solution for many tasks, from winning the ImageNet
-competition to winning at Go against a world champion. This class is
-designed to help students develop a deeper understanding of deep
-learning and explore new research directions and applications of deep
-learning. It assumes that students already have a basic understanding
-of deep learning. In particular, we will explore a selected list of
-new, cutting-edge topics in deep learning:<br>
-
-<ul>
-<li> Security and privacy issues in deep learning. First, we will explore attack methods and defenses in the area of adversarial deep learning, where attackers can purposefully generate adversarial examples to fool state-of-the-art deep learning systems. Second, we will explore the area of privacy-preserving deep learning. A deep learning system trained over private data could memorize and leak private information undesirably. We will explore areas including model-inversion attacks and how to provide differential privacy guarantees for deep learning algorithms. Finally, we will explore the use of deep learning in security applications such as malware and fraud detection. <br><p>
-
-<li> Novel application domains of deep learning, beyond the mainstays of computer vision and speech recognition. First, we will explore new techniques in deep reinforcement learning, involving both applications of reinforcement learning to traditionally supervised learning problems and applications of deep learning to tasks that involve decision making and control.  Second, we will explore new domains at the intersection of deep learning and program synthesis and formal verification. We will also explore other new application domains such as using deep learning for graph analysis. <br> <p>
-
-<li> Recent advances in the theoretical and systems aspects of deep learning. First, we will cover the recent advances in generative models, including variational autoencoders and generative adversarial networks. Second, we will explore new theoretical advances in understanding deep learning such as the Deep Rendering Model. Third, we will explore new system and architectural advances in scaling up deep learning including TensorFlow, MxNet and new architectural designs. 
-
-<br><p>
-</ul>
-
-
-
-</p>
-					
-
-
-                </div>
-            </div>
-
-            <div class="section" id="ClassFormat" style="text-align:justify">
-                <h3>Class Format and Project:</h3>
-
-                <div class="sec_body">
-                    <p>This is a lecture, discussion, and project oriented class. Each lecture will focus on one 
-					of the topics, including a survey of the state-of-the-art in the area and an in-depth 
-					discussion of the topic. Each week, students are expected to complete reading assignments 
-					before class and participate actively in class discussion.</p>
-					
-					<p><b>Deadlines:</b> 
-					<br>
-					Questions submission is due by Sunday on 7pm 
-					<br>
-					Voting on the submitted questions is due by Mon midnight</p>
-					
-					<p> Students will also form project groups and complete a research-quality class project. Groups will consist of one to three students. </p>
-
-
-
-<b>Course #</b>: COMPSCI 294-131 (Class #34939)
-                </div>
-            </div>
-
-    <div class="section" id="Prerequisites">
-                <h3>Background reading:</h3>
-					 <div class="sec_body">
-
-<a href="http://www.deeplearningbook.org">Deep Learning</a>, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville
-
-</div>
-            <div class="section" id="Grading">
-                <h3>Grading:</h3>
-					 <div class="sec_body">
-                    <ul>
-                        <li>20% class participation</li>
-                        <li>35% weekly reading assignment</li>
-                        <li>45% project</li>
-                    </ul>
-                </div>
-            </div>          
+          <div class="sec_body">
+            <p><a href="https:">Chang Liu</a>, <a href="https:">Richard Shin</a></p>
+          </div>
         </div>
-    </div>
-    <div class="notes">
+
+        <div class="section">
+          <h3>Lectures:</h3>
+
+          <div class="sec_body">
+            Wed 10:00am &ndash; noon  (First class starts on Aug 31) <br>
+            location: 250 Sutardja Dai Hall
+          </div>
+        </div>
+        <div class="section">
+          <h3>Course mailing list:</h3>
+          <div class="sec_body">
+            cs294-dl-f16@googlegroups.com <br>
+            Please sign up the course mailing list at https://groups.google.com/forum/#!forum/cs294-dl-f16 for future updates.<br>
+            <p>
+            If you do not plan to take the class, but are interested in getting announcements about guest speakers in class, and more generally, deep learning talks at Berkeley, please sign up the mailing list <b>https://groups.google.com/forum/#!forum/berkeley-deep-learning </b>for future announcements.<br>
+          </div>
+        </div>
+        <div class="section" id="Syllabus">
+          <h3>Syllabus:</h3>
+
+          <div class="sec_body">
+            <table id="hor-minimalist-b" width="800px">
+              <thead>
+                <tr>
+                  <th width="10%">Date</th>
+                  <th width="25%">Topic</th>
+                  <th width="65%">Reading Assignments &amp; Guest Lectures</th>
+
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="5" align="center"><b></b></td>
+                </tr>
+                <tr>
+                  <td>8/31/2016</td>
+                  <td>Introduction</td>
+                  <td>Guest speaker: <a href="guest_speakers.html#Lecture1">Kaiming He</a><br>
+                    Reading: <a href="https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf">Deep Learning</a>, by Yann LeCun, Yoshua Bengio, and Geoffrey Hinton./td>
+                </tr>
+                <tr>
+                  <td>9/7/2016</td>
+                  <td>Attention, memory models, new applications and
+                    directions</td>
+                  <td>Guest speaker: Ilya Sutskever</td>
+                </tr>
+                <tr>
+                  <td>9/14/2016</td>
+                  <td>Learning algorithms from examples</td>
+                  <td>Guest speaker: Wojciech Zaremba</td>
+                </tr>
+                <tr>
+                  <td>9/21/2016</td>
+                  <td>Deep learning for theorem proving</td>
+                  <td>Guest speaker: Geoffrey Irving</td>
+                </tr>
+                <tr>
+                  <td>9/27/2016 (special date)</td>
+                  <td>Generative models</td>
+                  <td>Guest speaker: Yoshua Bengio</td>
+                </tr>
+                <tr>
+                  <td>9/28/2016</td>
+                  <td>Privacy-preserving deep learning</td>
+                  <td>Guest speaker: Kunal Talwar</td>
+                </tr>
+                <tr>
+                  <td>10/5/2016</td>
+                  <td>Adversarial deep learning</td>
+                  <td>Guest speaker: Ian Goodfellow</td>
+                </tr>
+                <tr>
+                  <td>10/12/2016</td>
+                  <td>Sequences and one-shot learning</td>
+                  <td>Guest speaker: Oriol Vinyals</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <br>
+        <p>
+
+
+        <div class="section" id="CourseDescription">
+          <h3>Course Description:</h3>
+
+          <div class="sec_body" style="text-align:justify">
+            <p>
+
+            In recent years, deep learning has enabled huge progress in many
+            domains including computer vision, speech, NLP, and robotics. It has
+            become the leading solution for many tasks, from winning the ImageNet
+            competition to winning at Go against a world champion. This class is
+            designed to help students develop a deeper understanding of deep
+            learning and explore new research directions and applications of deep
+            learning. It assumes that students already have a basic understanding
+            of deep learning. In particular, we will explore a selected list of
+            new, cutting-edge topics in deep learning:
+            <ul>
+              <li> Security and privacy issues in deep learning. First, we will
+                explore attack methods and defenses in the area of adversarial
+                deep learning, where attackers can purposefully generate
+                adversarial examples to fool state-of-the-art deep learning
+                systems. Second, we will explore the area of privacy-preserving
+                deep learning. A deep learning system trained over private data
+                could memorize and leak private information undesirably. We will
+                explore areas including model-inversion attacks and how to
+                provide differential privacy guarantees for deep learning
+                algorithms. Finally, we will explore the use of deep learning in
+                security applications such as malware and fraud detection.</li>
+
+              <li> Novel application domains of deep learning, beyond the
+                mainstays of computer vision and speech recognition. First, we
+                will explore new techniques in deep reinforcement learning,
+                involving both applications of reinforcement learning to
+                traditionally supervised learning problems and applications of
+                deep learning to tasks that involve decision making and
+                control.  Second, we will explore new domains at the
+                intersection of deep learning and program synthesis and formal
+                verification. We will also explore other new application
+                domains such as using deep learning for graph analysis.</li>
+
+              <li> Recent advances in the theoretical and systems aspects of
+                deep learning. First, we will cover the recent advances in
+                generative models, including variational autoencoders and
+                generative adversarial networks. Second, we will explore new
+                theoretical advances in understanding deep learning such as
+                the Deep Rendering Model. Third, we will explore new system
+                and architectural advances in scaling up deep learning
+                including TensorFlow, MxNet and new architectural designs.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section" id="ClassFormat" style="text-align:justify">
+          <h3>Class Format and Project:</h3>
+
+          <div class="sec_body">
+            <p>This is a lecture, discussion, and project oriented class. Each lecture will focus on one
+            of the topics, including a survey of the state-of-the-art in the area and an in-depth
+            discussion of the topic. Each week, students are expected to complete reading assignments
+            before class and participate actively in class discussion.</p>
+
+            <p><b>Deadlines:</b>
+            <br>
+            For students,
+            <ul>
+              <li>Submit questions by Sunday noon</li>
+              <li>Vote on the submitted questions by Monday 11:59 pm</li>
+            </ul>
+            For discussion leads,
+            <ul>
+              <li>Summarize questions proposed by students to form the poll and
+                send it by Sunday 11:59 pm</li>
+              <li>Summarize the poll to generate a ranked &amp; categorized discussion
+                question list by Tuesday 7pm</li>
+            </ul>
+            </p>
+            <p> Students will also form project groups and complete a research-quality class project. Groups will consist of one to three students.
+            <ul>
+              <li>9/28: project proposal due</li>
+              <li>10/26: project milestone report due</li>
+              <li>11/30: in-class presentation</li>
+              <li>12/13: final project report due</li>
+            </ul>
+            </p>
+
+
+
+            <b>Course #</b>: COMPSCI 294-131 (Class #34939)
+          </div>
+        </div>
+
+        <div class="section" id="Prerequisites">
+          <h3>Background reading:</h3>
+          <div class="sec_body">
+
+            <a href="http://www.deeplearningbook.org">Deep Learning</a>, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville
+
+          </div>
+          <div class="section" id="Grading">
+            <h3>Grading:</h3>
+            <div class="sec_body">
+              <ul>
+                <li>20% class participation</li>
+                <li>35% weekly reading assignment</li>
+                <ul>
+                  <li>10% discussion leads</li>
+                  <li>25% individual reading assignments</li>
+                </ul>
+                <li>45% project</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notes">
         <div class="sec_body">
-            <p>All information is tentative and subject to change.</p>
+          <p>All information is tentative and subject to change.</p>
         </div>
-    </div>
+      </div>
 
 
-</body></html>
+  </body></html>

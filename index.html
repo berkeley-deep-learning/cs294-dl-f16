@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<!-- saved from url=(0061)http://inst.eecs.berkeley.edu/~cs294-116/fa15/#Administrative -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-
-    <title>CS 294-131 Special Topics in Deep Learning Fall 2016</title>
-
-    <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <style>
+  <title>CS 294-131 Special Topics in Deep Learning Fall 2016</title>
+  <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+  <style type="text/css">
 /* thanks to http://www.smashingmagazine.com/2008/08/13/top-10-css-table-designs/ */
-#hor-minimalist-b {
-  background:#fff;
-  margin:0 auto;
-  border-collapse:collapse;
-  text-align:left;
-  border-collapse:collapse;
-  border:1px solid #000;
-  width:70%
-}
+        #hor-minimalist-b {
+          background:#fff;
+          margin:0 auto;
+          border-collapse:collapse;
+          text-align:left;
+          border-collapse:collapse;
+          border:1px solid #000;
+          width:70%
+        }
 
         #hor-minimalist-b th {
           font-weight:400;
@@ -46,7 +45,7 @@
         }
 
         #content {
-          width:700px;
+          width:800px;
           margin:0 auto;
           background:#fff;
           -moz-border-radius:18px;
@@ -58,7 +57,7 @@
         }
 
         #page-wrap {
-          width:700px;
+          width:800px;
           margin:0 auto;
           margin-bottom:40px
         }
@@ -121,555 +120,570 @@
           text-align:center;
           font-size:smaller;
         }
-    </style>
-  </head>
+        
+        #Syllabus td {
+          padding: 1em 0.5em;
+          vertical-align: top;
+        }
+        
+        #Syllabus td:first-child {
+          white-space: nowrap;
+        }
+        
+        #Syllabus ul {
+          margin: 0;
+        }
+  </style>
+</head>
 
-  <body>
-    <div id="navigation">
-      <ul>
-        <li>
-          <a href="#Administrative">Administrative</a>
-        </li>
+<body>
+  <div id="navigation">
+    <ul>
+      <li><a href="#Administrative">Administrative</a></li>
 
-        <li>
-          <a href="#Syllabus">Syllabus</a>
-        </li>
-        <li>
-          <a href="#CourseDescription">Course Description</a>
-        </li>
+      <li><a href="#Syllabus">Syllabus</a></li>
 
-        <li>
-          <a href="#ClassFormat">Class Format and Project</a>
-        </li>
+      <li><a href="#CourseDescription">Course Description</a></li>
 
-        <li>
-          <a href="#Grading">Grading</a>
-        </li>
-      </ul>
+      <li><a href="#ClassFormat">Class Format and Project</a></li>
+
+      <li><a href="#Grading">Grading</a></li>
+    </ul>
+  </div>
+
+  <div id="page-wrap">
+    <div id="title">
+      <h1>CS294: Special Topics in Deep Learning</h1>
+
+      <h1 style="margin-top:-20px">Fall 2016</h1>
     </div>
 
-    <div id="page-wrap">
-        <div id="title">
-            <h1>CS294: Special Topics in Deep Learning </h1>
+    <div id="content">
+      <div class="sectionhead" id="Administrative"></div>
 
-            <h1 style="margin-top:-20px">Fall 2016</h1>
+      <div class="section">
+        <h3>Instructor and co-Instructors:</h3>
+
+        <div class="sec_body">
+          <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>, <a href=
+          "https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a href=
+          "http://www.cs.berkeley.edu/~dawnsong/">Dawn Song</a>
         </div>
-
-        <div id="content">
-            <div class="sectionhead" id="Administrative"></div>
-
-            <div class="section">
-                <h3>Instructor and co-Instructors:</h3>
-
-                <div class="sec_body">
-                    	<a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a href="http://www.cs.berkeley.edu/~dawnsong/">Dawn Song</a>		
-                </div>
-            </div>
-
-            <div class="section">
-                <h3> Teaching Assistant:</h3>
-
-                <div class="sec_body">
-                    <p><a href="https:">Chang Liu</a>, <a href="https:">Richard Shin</a></p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h3>Lectures:</h3>
-
-                <div class="sec_body">
-                    Wed 10:00am-noon  (First class starts on Aug 31) <br>
-		    location: SDH250
-                </div>
-            </div>           
-            <div class="section">
-<h3>Course mailing list:</h3>
-                <div class="sec_body">
-     cs294-dl-f16@googlegroups.com <br>
-Please sign up the course mailing list at https://groups.google.com/forum/#!forum/cs294-dl-f16 for future updates.<br>
-<p>
-If you do not plan to take the class, but are interested in getting announcements about guest speakers in class, and more generally, deep learning talks at Berkeley, please sign up the mailing list <b>https://groups.google.com/forum/#!forum/berkeley-deep-learning </b>for future announcements.<br>
-</div>
-            </div>           
-			<div class="section" id="Syllabus">
-                <h3>Syllabus:</h3>
-
-                <div class="sec_body">
-
-
-		  <table border="0">
-
-
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 1  </div>
-			<div> 8/31/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>Introduction</b>
-			  <br>
-			  <b>Speaker:</b> <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture1">Kaiming Chen</a>
-        <br>
-        <a href="https://docs.google.com/presentation/d/1K84BmPuOSoLSruL3XQNHYtSW916ZtFS_XPdVHfV16Qg/pub">Introductory slides</a>
-
-			  &nbsp;&nbsp;
-			</div><font color="#808000">Reading:</font>
-			<ul>
-			  <li> <a href="https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf">Deep Learning</a>, by Yann LeCun, Yoshua Bengio, and Geoffrey Hinton.
-			  </li>
-			</ul>
-
-		    </td> </tr>
-
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 2  </div>
-			<div> 9/7/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>Why does deep learning actually work?</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture2">Ilya Sutskever</a>
       </div>
-      <font color="#808000">Main readings:</font>
-			<ul>
-        <li>
-          <a href="https://arxiv.org/pdf/1412.6572.pdf">Explaining and
-            Harnessing Adversarial Examples</a>, by Ian J. Goodfellow, Jonathon Shlens, and Christian Szegedy.
-        </li>
-        <li> 
-          <a href="https://arxiv.org/pdf/1412.6572.pdf">Qualitatively
-            Characterizing Neural Network Optimization Problems</a>, by Ian J.
-          Goodfellow, Oriol Vinyals, and Andrew M. Saxe.
-        </li>
-			</ul>
-      <font color="#808000">Background readings:</font>
-			<ul>
-			  <li>
-          <a href="https://en.wikipedia.org/wiki/Algorithmic_probability">
-            Algorithmic probability</a>, Wikipedia
-			  </li>
-			  <li>
-          <a href="http://www.raysolomonoff.com/publications/isis96.pdf">
-            Does Algorithmic Probability Solve the Problem
-          of Induction?</a>, by Ray Solomonoff
-			  </li>
-			  <li>
-          <a href="https://people.mpi-inf.mpg.de/~mehlhorn/SeminarEvolvability/ValiantLearnable.pdf">
-            A Theory of the Learnable</a>, by Leslie Valiant
-			  </li>
-			  <li>
-          <a href="http://people.cs.uchicago.edu/~razborov/files/helsinki.pdf">
-            On Small Depth Threshold Circuits</a>, by Alexander A. Razborov
-          (read table on last page)
-			  </li>
-			</ul>
 
-        <!--
-<ul><li> TBD </li>-->
-			</ul>
+      <div class="section">
+        <h3>Teaching Assistant:</h3>
 
-		    </td> </tr>
+        <div class="sec_body">
+          <p><a href="https:">Chang Liu</a>, <a href="https:">Richard Shin</a></p>
+        </div>
+      </div>
 
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 3</div>
-			<div> 9/14/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>Learning algorithms from examples</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture3">Wojciech Zaremba</a>
+      <div class="section">
+        <h3>Lectures:</h3>
 
-			  &nbsp;&nbsp;
-        <!--
-			</div><font color="#808000">Readings:</font>
-			<ul><li> TBD </li>
-			</ul>-->
+        <div class="sec_body">
+          Wed 10:00am-noon (First class starts on Aug 31)<br>
+          location: SDH250
+        </div>
+      </div>
 
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 4</div>
-			<div> 9/21/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>Deep learning for theorem proving</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture4">Geoffrey Irving</a>
+      <div class="section">
+        <h3>Course mailing list:</h3>
 
-			  &nbsp;&nbsp;
-                <!--
+        <div class="sec_body">
+          cs294-dl-f16@googlegroups.com<br>
+          Please sign up the course mailing list at
+          https://groups.google.com/forum/#!forum/cs294-dl-f16 for future updates.<br>
 
-			</div><font color="#808000">Readings:</font>
-			<ul><li> TBD </li>
-			</ul>
--->
+          <p>If you do not plan to take the class, but are interested in getting announcements
+          about guest speakers in class, and more generally, deep learning talks at Berkeley,
+          please sign up the mailing list
+          <b>https://groups.google.com/forum/#!forum/berkeley-deep-learning</b> for future
+          announcements.<br></p>
+        </div>
+      </div>
 
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 5</div>
-			<div> 9/27/16 </div>
-            <div> (Special date)</div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>Generative models</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture5">Yoshua Bengio</a>
+      <div class="section" id="Syllabus">
+        <h3>Syllabus:</h3>
 
-			  &nbsp;&nbsp;
-        <!--
-			</div><font color="#808000">Readings:</font>
-			<ul><li> TBD </li>
-			</ul>
--->
-
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 6</div>
-			<div> 9/28/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>Privacy-preserving deep learning</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture6">Kunal Talwar</a>
-
-			  &nbsp;&nbsp;
-			        <!--
-</div><font color="#808000">Readings:</font>
-			<ul><li> TBD </li>
-			</ul>
--->
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 7</div>
-			<div> 10/5/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>Adversarial deep learning</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture7">Ian Goodfellow</a>
-
-			  &nbsp;&nbsp;
-        <!--
-			</div><font color="#808000">Readings:</font>
-			<ul><li> TBD </li>
-			</ul>
--->
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 8</div>
-			<div> 10/12/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>Sequences and one-shot learning</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture8">Oriol Vinyals</a>
-
-			  &nbsp;&nbsp;
-        <!--
-			</div><font color="#808000">Readings:</font>
-			<ul><li> TBD </li>
-			</ul>
--->
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 9</div>
-			<div> 10/19/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>	TBD</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture9">TBD</a>
-
-			  &nbsp;&nbsp;
-                <!--
-
-			</div><font color="#808000">Readings:</font>
-			<ul><li> TBD </li>
-			</ul>
--->
-
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 10</div>
-			<div> 10/26/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>TBD</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture10">TBD</a>
-
-			  &nbsp;&nbsp;
-        <!--
-			</div><font color="#808000">Readings:</font>
-			<ul><li> TBD </li>
-			</ul>
--->            
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 11</div>
-			<div> 11/2/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>TBD</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture11">TBD</a>
-
-			  &nbsp;&nbsp;
-        <!--
-			</div><font color="#808000">Readings:</font>
-			<ul><li> TBD </li>
-			</ul>
--->         
-
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 12</div>
-			<div> 11/9/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>TBD</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture12">TBD</a>
-
-			  &nbsp;&nbsp;
-                <!--
-			</div><font color="#808000">Readings:</font>
-			<ul><li> TBD </li>
-			</ul>
-                    -->
-
-
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 13</div>
-			<div> 11/16/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>TBD</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture13">TBD</a>
-
-			  &nbsp;&nbsp;
-        <!--
-			</div><font color="#808000">Readings:</font>
-			<ul><li> TBD </li>
-			</ul>
--->                        
-
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 14</div>
-			<div> 11/23/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>TBD</b><br>
-			  <b>Speaker:</b>
-			  <a href="https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture14">TBD</a>
-
-			  &nbsp;&nbsp;
-        <!--
-			</div><font color="#808000">Readings:</font>
-			<ul><li> TBD </li>
-			</ul>
--->                        
-		    <tr> <td colspan="2">&nbsp;</td> </tr>
-		    <tr> <td valign="top">
-			<div class="lecture">Lecture 15</div>
-			<div> 11/30/16 </div>
-<!--			<div><font size="-1">(DB) </font></div>-->
-		      </td>
-		      <td valign="top">
-			<div id="lecture1" class="lec-title">
-			  <b>In-class project presentations</b><br>
-
-<!--		    <tr> <td colspan="2">
-			<font color="#000080" size=+1> <br/> Part 1: Basics
-			</font>
-		    </td> </tr> -->
-
-		  </table>
-		  <!--
-                    <table id="hor-minimalist-b" width="800px">
-                        <thead>
-                            <tr>
-                                <th width="10%">Date</th>
-                                <th width="15%">Topic</th>                                
-                                <th width="75%">Reading Assignments &amp; Guest Lectures</th>
-								
-                               
-                            </tr>
-                        </thead>
-                        <tbody>
-							<tr>
-								<td colspan="5" align="center"><b></b></td>
-							</tr>
-                            <tr>
-                                <td>8/31/2016</td>
-                                <td>Introduction</td>                                
-
-								
-										<br>
-										<br>
-<td>	Guest speaker: <a href="guest_speakers.html#Lecture1"> Kaiming He </a><br>
-Reading: <a href="https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf">Deep Learning</a>, by Yann LeCun, Yoshua Bengio, and Geoffrey Hinton.							</td>
-                                
-                            </tr>  
-                        </tbody>
-                    </table>
+        <div class="sec_body">
+          <table>
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 1
                 </div>
-            </div> -->
-        <br>
-        <p>
 
+                <div>
+                  8/31/16
+                </div>
+              </td>
 
-        <div class="section" id="CourseDescription">
-          <h3>Course Description:</h3>
+              <td >
+                <div class="lec-title">
+                  <b>Introduction</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture1">
+                  Kaiming Chen</a><br>
+                  <a href=
+                  "https://docs.google.com/presentation/d/1K84BmPuOSoLSruL3XQNHYtSW916ZtFS_XPdVHfV16Qg/pub">
+                  Introductory slides</a>
+                </div><font color="#808000">Reading:</font>
 
-          <div class="sec_body" style="text-align:justify">
-            <p>
-
-            In recent years, deep learning has enabled huge progress in many
-            domains including computer vision, speech, NLP, and robotics. It has
-            become the leading solution for many tasks, from winning the ImageNet
-            competition to winning at Go against a world champion. This class is
-            designed to help students develop a deeper understanding of deep
-            learning and explore new research directions and applications of deep
-            learning. It assumes that students already have a basic understanding
-            of deep learning. In particular, we will explore a selected list of
-            new, cutting-edge topics in deep learning:
-            <ul>
-              <li> Security and privacy issues in deep learning. First, we will
-                explore attack methods and defenses in the area of adversarial
-                deep learning, where attackers can purposefully generate
-                adversarial examples to fool state-of-the-art deep learning
-                systems. Second, we will explore the area of privacy-preserving
-                deep learning. A deep learning system trained over private data
-                could memorize and leak private information undesirably. We will
-                explore areas including model-inversion attacks and how to
-                provide differential privacy guarantees for deep learning
-                algorithms. Finally, we will explore the use of deep learning in
-                security applications such as malware and fraud detection.</li>
-
-              <li> Novel application domains of deep learning, beyond the
-                mainstays of computer vision and speech recognition. First, we
-                will explore new techniques in deep reinforcement learning,
-                involving both applications of reinforcement learning to
-                traditionally supervised learning problems and applications of
-                deep learning to tasks that involve decision making and
-                control.  Second, we will explore new domains at the
-                intersection of deep learning and program synthesis and formal
-                verification. We will also explore other new application
-                domains such as using deep learning for graph analysis.</li>
-
-              <li> Recent advances in the theoretical and systems aspects of
-                deep learning. First, we will cover the recent advances in
-                generative models, including variational autoencoders and
-                generative adversarial networks. Second, we will explore new
-                theoretical advances in understanding deep learning such as
-                the Deep Rendering Model. Third, we will explore new system
-                and architectural advances in scaling up deep learning
-                including TensorFlow, MxNet and new architectural designs.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="section" id="ClassFormat" style="text-align:justify">
-          <h3>Class Format and Project:</h3>
-
-          <div class="sec_body">
-            <p>This is a lecture, discussion, and project oriented class. Each lecture will focus on one
-            of the topics, including a survey of the state-of-the-art in the area and an in-depth
-            discussion of the topic. Each week, students are expected to complete reading assignments
-            before class and participate actively in class discussion.</p>
-
-            <p><b>Deadlines:</b>
-            <br>
-            For students,
-            <ul>
-              <li>Submit questions by Sunday noon</li>
-              <li>Vote on the submitted questions by Monday 11:59 pm</li>
-            </ul>
-            For discussion leads,
-            <ul>
-              <li>Summarize questions proposed by students to form the poll and
-                send it by Sunday 11:59 pm</li>
-              <li>Summarize the poll to generate a ranked &amp; categorized discussion
-                question list by Tuesday 7pm</li>
-            </ul>
-            </p>
-            <p> Students will also form project groups and complete a research-quality class project. Groups will consist of one to three students.
-            <ul>
-              <li>9/28: project proposal due</li>
-              <li>10/26: project milestone report due</li>
-              <li>11/30: in-class presentation</li>
-              <li>12/13: final project report due</li>
-            </ul>
-            </p>
-
-
-
-            <b>Course #</b>: COMPSCI 294-131 (Class #34939)
-          </div>
-        </div>
-
-        <div class="section" id="Prerequisites">
-          <h3>Background reading:</h3>
-          <div class="sec_body">
-
-            <a href="http://www.deeplearningbook.org">Deep Learning</a>, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville
-
-          </div>
-          <div class="section" id="Grading">
-            <h3>Grading:</h3>
-            <div class="sec_body">
-              <ul>
-                <li>20% class participation</li>
-                <li>35% weekly reading assignment</li>
                 <ul>
-                  <li>10% discussion leads</li>
-                  <li>25% individual reading assignments</li>
+                  <li><a href="https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf">Deep
+                  Learning</a>, by Yann LeCun, Yoshua Bengio, and Geoffrey Hinton.</li>
                 </ul>
-                <li>45% project</li>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 2
+                </div>
+
+                <div>
+                  9/7/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>Why does deep learning actually work?</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture2">
+                  Ilya Sutskever</a>
+                </div><font color="#808000">Main readings:</font>
+
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1412.6572.pdf">Explaining and Harnessing
+                  Adversarial Examples</a>, by Ian J. Goodfellow, Jonathon Shlens, and Christian
+                  Szegedy.</li>
+
+                  <li><a href="https://arxiv.org/pdf/1412.6572.pdf">Qualitatively Characterizing
+                  Neural Network Optimization Problems</a>, by Ian J. Goodfellow, Oriol Vinyals,
+                  and Andrew M. Saxe.</li>
+                </ul><font color="#808000">Background readings:</font>
+
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Algorithmic_probability">Algorithmic
+                  probability</a>, Wikipedia</li>
+
+                  <li><a href="http://www.raysolomonoff.com/publications/isis96.pdf">Does
+                  Algorithmic Probability Solve the Problem of Induction?</a>, by Ray
+                  Solomonoff</li>
+
+                  <li><a href=
+                  "https://people.mpi-inf.mpg.de/~mehlhorn/SeminarEvolvability/ValiantLearnable.pdf">
+                  A Theory of the Learnable</a>, by Leslie Valiant</li>
+
+                  <li><a href="http://people.cs.uchicago.edu/~razborov/files/helsinki.pdf">On Small
+                  Depth Threshold Circuits</a>, by Alexander A. Razborov (read table on last
+                  page)</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 3
+                </div>
+
+                <div>
+                  9/14/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>Learning algorithms from examples</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture3">
+                  Wojciech Zaremba</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 4
+                </div>
+
+                <div>
+                  9/21/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>Deep learning for theorem proving</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture4">
+                  Geoffrey Irving</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 5
+                </div>
+
+                <div>
+                  9/27/16
+                </div>
+
+                <div>
+                  (Special date)
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>Generative models</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture5">
+                  Yoshua Bengio</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 6
+                </div>
+
+                <div>
+                  9/28/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>Privacy-preserving deep learning</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture6">
+                  Kunal Talwar</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 7
+                </div>
+
+                <div>
+                  10/5/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>Adversarial deep learning</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture7">
+                  Ian Goodfellow</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 8
+                </div>
+
+                <div>
+                  10/12/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>Sequences and one-shot learning</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture8">
+                  Oriol Vinyals</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 9
+                </div>
+
+                <div>
+                  10/19/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>TBD</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture9">
+                  TBD</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 10
+                </div>
+
+                <div>
+                  10/26/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>TBD</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture10">
+                  TBD</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 11
+                </div>
+
+                <div>
+                  11/2/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>TBD</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture11">
+                  TBD</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 12
+                </div>
+
+                <div>
+                  11/9/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>TBD</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture12">
+                  TBD</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 13
+                </div>
+
+                <div>
+                  11/16/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>TBD</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture13">
+                  TBD</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 14
+                </div>
+
+                <div>
+                  11/23/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>TBD</b><br>
+                  <b>Speaker:</b> <a href=
+                  "https://berkeley-deep-learning.github.io/cs294-dl-f16/guest_speakers.html#Lecture14">
+                  TBD</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td >
+                <div class="lecture">
+                  Lecture 15
+                </div>
+
+                <div>
+                  11/30/16
+                </div>
+              </td>
+
+              <td >
+                <div class="lec-title">
+                  <b>In-class project presentations</b>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <div class="section" id="CourseDescription">
+            <h3>Course Description:</h3>
+
+            <div class="sec_body" style="text-align:justify">
+              <p>In recent years, deep learning has enabled huge progress in many domains including
+              computer vision, speech, NLP, and robotics. It has become the leading solution for
+              many tasks, from winning the ImageNet competition to winning at Go against a world
+              champion. This class is designed to help students develop a deeper understanding of
+              deep learning and explore new research directions and applications of deep learning.
+              It assumes that students already have a basic understanding of deep learning. In
+              particular, we will explore a selected list of new, cutting-edge topics in deep
+              learning:</p>
+
+              <ul>
+                <li>Security and privacy issues in deep learning. First, we will explore attack
+                methods and defenses in the area of adversarial deep learning, where attackers can
+                purposefully generate adversarial examples to fool state-of-the-art deep learning
+                systems. Second, we will explore the area of privacy-preserving deep learning. A
+                deep learning system trained over private data could memorize and leak private
+                information undesirably. We will explore areas including model-inversion attacks
+                and how to provide differential privacy guarantees for deep learning algorithms.
+                Finally, we will explore the use of deep learning in security applications such as
+                malware and fraud detection.</li>
+
+                <li>Novel application domains of deep learning, beyond the mainstays of computer
+                vision and speech recognition. First, we will explore new techniques in deep
+                reinforcement learning, involving both applications of reinforcement learning to
+                traditionally supervised learning problems and applications of deep learning to
+                tasks that involve decision making and control. Second, we will explore new domains
+                at the intersection of deep learning and program synthesis and formal verification.
+                We will also explore other new application domains such as using deep learning for
+                graph analysis.</li>
+
+                <li>Recent advances in the theoretical and systems aspects of deep learning. First,
+                we will cover the recent advances in generative models, including variational
+                autoencoders and generative adversarial networks. Second, we will explore new
+                theoretical advances in understanding deep learning such as the Deep Rendering
+                Model. Third, we will explore new system and architectural advances in scaling up
+                deep learning including TensorFlow, MxNet and new architectural designs.</li>
               </ul>
             </div>
           </div>
+
+          <div class="section" id="ClassFormat" style="text-align:justify">
+            <h3>Class Format and Project:</h3>
+
+            <div class="sec_body">
+              <p>This is a lecture, discussion, and project oriented class. Each lecture will focus
+              on one of the topics, including a survey of the state-of-the-art in the area and an
+              in-depth discussion of the topic. Each week, students are expected to complete
+              reading assignments before class and participate actively in class discussion.</p>
+
+              <p><b>Deadlines:</b><br>
+              For students,</p>
+
+              <ul>
+                <li>Submit questions by Sunday noon</li>
+
+                <li>Vote on the submitted questions by Monday 11:59 pm</li>
+              </ul>For discussion leads,
+
+              <ul>
+                <li>Summarize questions proposed by students to form the poll and send it by Sunday
+                11:59 pm</li>
+
+                <li>Summarize the poll to generate a ranked &amp; categorized discussion question
+                list by Tuesday 7pm</li>
+              </ul>
+
+              <p>Students will also form project groups and complete a research-quality class
+              project. Groups will consist of one to three students.</p>
+
+              <ul>
+                <li>9/28: project proposal due</li>
+
+                <li>10/26: project milestone report due</li>
+
+                <li>11/30: in-class presentation</li>
+
+                <li>12/13: final project report due</li>
+              </ul><b>Course #</b>: COMPSCI 294-131 (Class #34939)
+            </div>
+          </div>
+
+          <div class="section" id="Prerequisites">
+            <h3>Background reading:</h3>
+
+            <div class="sec_body">
+              <a href="http://www.deeplearningbook.org">Deep Learning</a>, by Ian Goodfellow,
+              Yoshua Bengio, and Aaron Courville
+            </div>
+
+            <div class="section" id="Grading">
+              <h3>Grading:</h3>
+
+              <div class="sec_body">
+                <ul>
+                  <li>20% class participation</li>
+
+                  <li>35% weekly reading assignment</li>
+
+                  <li style="list-style: none">
+                    <ul>
+                      <li>10% discussion leads</li>
+
+                      <li>25% individual reading assignments</li>
+                    </ul>
+                  </li>
+
+                  <li>45% project</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="notes">
+          <div class="sec_body">
+            <p>All information is tentative and subject to change.</p>
+          </div>
         </div>
       </div>
-      <div class="notes">
-        <div class="sec_body">
-          <p>All information is tentative and subject to change.</p>
-        </div>
-      </div>
-
-
-  </body></html>
+    </div>
+  </div>
+</body>
+</html>
